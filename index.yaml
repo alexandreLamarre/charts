@@ -6394,36 +6394,6 @@ entries:
       catalog.cattle.io/ui-component: rancher-backup
       catalog.cattle.io/upstream-version: 3.1.3
     apiVersion: v2
-    appVersion: 3.1.3
-    created: "2024-02-26T12:20:24.812674-08:00"
-    description: Provides ability to back up and restore the Rancher application running
-      on any Kubernetes cluster
-    digest: a75deecc4b0a872e64828eff08596bc5cf53b6887bc24c888f52f7a67fdae3db
-    icon: https://charts.rancher.io/assets/logos/backup-restore.svg
-    keywords:
-    - applications
-    - infrastructure
-    kubeVersion: '>= 1.23.0-0'
-    name: rancher-backup
-    urls:
-    - assets/rancher-backup/rancher-backup-102.0.3+up3.1.3.tgz
-    version: 102.0.3+up3.1.3
-  - annotations:
-      catalog.cattle.io/auto-install: rancher-backup-crd=match
-      catalog.cattle.io/certified: rancher
-      catalog.cattle.io/display-name: Rancher Backups
-      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.28.0-0'
-      catalog.cattle.io/namespace: cattle-resources-system
-      catalog.cattle.io/os: linux
-      catalog.cattle.io/permits-os: linux,windows
-      catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
-      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
-      catalog.cattle.io/release-name: rancher-backup
-      catalog.cattle.io/scope: management
-      catalog.cattle.io/type: cluster-tool
-      catalog.cattle.io/ui-component: rancher-backup
-      catalog.cattle.io/upstream-version: 3.1.3
-    apiVersion: v2
     appVersion: 3.1.3-rc6
     created: "2024-01-26T11:06:19.390561-08:00"
     description: Provides ability to back up and restore the Rancher application running
@@ -6966,21 +6936,6 @@ entries:
     - assets/rancher-backup/rancher-backup-1.0.200.tgz
     version: 1.0.200
   rancher-backup-crd:
-  - annotations:
-      catalog.cattle.io/certified: rancher
-      catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/namespace: cattle-resources-system
-      catalog.cattle.io/release-name: rancher-backup-crd
-    apiVersion: v2
-    appVersion: 3.1.3
-    created: "2024-02-26T12:20:26.675971-08:00"
-    description: Installs the CRDs for rancher-backup.
-    digest: 3809e9de71998aa5d8d1d58394a62643dbb48f7fd84f32a5813722de8744bd19
-    name: rancher-backup-crd
-    type: application
-    urls:
-    - assets/rancher-backup-crd/rancher-backup-crd-102.0.3+up3.1.3.tgz
-    version: 102.0.3+up3.1.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -11446,10 +11401,10 @@ entries:
       catalog.cattle.io/upstream-version: 3.17.10
     apiVersion: v1
     appVersion: 3.17.10
-    created: "2024-02-01T20:54:11.020384457-05:00"
+    created: "2024-03-07T22:34:16.929021966-05:00"
     description: Collects and filter logs using highly configurable CRDs. Powered
       by Banzai Cloud Logging Operator.
-    digest: d275006dba7c6cd2e31e4b8e2aae982fba586e676f9af47ea8433d621c402a6c
+    digest: a2734500c4ce2caa3cd0ea46604caa72276eabe03a28e974c3254e9c034b4cd0
     icon: https://charts.rancher.io/assets/logos/logging.svg
     keywords:
     - logging
@@ -11457,14 +11412,14 @@ entries:
     - security
     name: rancher-logging
     urls:
-    - assets/rancher-logging/rancher-logging-102.0.2+up3.17.10.tgz
-    version: 102.0.2+up3.17.10
+    - assets/rancher-logging/rancher-logging-102.0.3-rc1+up3.17.10.tgz
+    version: 102.0.3-rc1+up3.17.10
   - annotations:
       catalog.cattle.io/auto-install: rancher-logging-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/deploys-on-os: windows
       catalog.cattle.io/display-name: Logging
-      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.27.0-0'
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.28.0-0'
       catalog.cattle.io/namespace: cattle-logging-system
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/provides-gvr: logging.banzaicloud.io.clusterflow/v1beta1
@@ -11475,10 +11430,10 @@ entries:
       catalog.cattle.io/upstream-version: 3.17.10
     apiVersion: v1
     appVersion: 3.17.10
-    created: "2024-02-01T16:04:02.687943-05:00"
+    created: "2024-02-01T20:54:11.020384457-05:00"
     description: Collects and filter logs using highly configurable CRDs. Powered
       by Banzai Cloud Logging Operator.
-    digest: a70bda20566da9107d26ffa42eab8fa2fc613d36040bd74230b72e8536910ff8
+    digest: d275006dba7c6cd2e31e4b8e2aae982fba586e676f9af47ea8433d621c402a6c
     icon: https://charts.rancher.io/assets/logos/logging.svg
     keywords:
     - logging
@@ -11950,6 +11905,20 @@ entries:
     - assets/rancher-logging/rancher-logging-3.6.000.tgz
     version: 3.6.000
   rancher-logging-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/release-name: rancher-logging-crd
+    apiVersion: v1
+    created: "2024-03-07T22:34:16.981596362-05:00"
+    description: Installs the CRDs for rancher-logging.
+    digest: b4a3399c34b618a1fb85161a534f61c9bd05dd7ead46ed0cb0924f136d2bc071
+    name: rancher-logging-crd
+    type: application
+    urls:
+    - assets/rancher-logging-crd/rancher-logging-crd-102.0.3-rc1+up3.17.10.tgz
+    version: 102.0.3-rc1+up3.17.10
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
