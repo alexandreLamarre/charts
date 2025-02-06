@@ -15684,7 +15684,7 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/provides-gvr: monitoring.coreos.com.prometheus/v1
-      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
       catalog.cattle.io/release-name: rancher-monitoring
       catalog.cattle.io/requests-cpu: 4500m
       catalog.cattle.io/requests-memory: 4000Mi
@@ -15693,7 +15693,7 @@ entries:
       catalog.cattle.io/upstream-version: 57.0.3
     apiVersion: v2
     appVersion: v0.75.1
-    created: "2025-02-03T12:13:25.330544037-05:00"
+    created: "2025-02-06T10:33:46.111577714-05:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -15765,7 +15765,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 24f2f10a561695f654f8a0b11f478c9c972016a9b7474560f448bd79bca1f99f
+    digest: 37e7aef7a0d3b60a21db3c885dff3221e0e40465090f00cc44e2993301cd5bd1
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
